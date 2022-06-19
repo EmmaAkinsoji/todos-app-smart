@@ -1,0 +1,221 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-transform: capitalize;
+list-style: none;
+font-family: 'Gill Sans', 'Gill Sans MT',
+ Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+background-image: linear-gradient(to left,
+rgba(108, 141, 103, 1),rgba(176, 207, 184, 1));
+}
+.container{
+margin: 50px auto;
+width: 200px;
+height: 350px;
+border-radius: 20px;
+border: 5px solid #eee;
+background-color: rgba(108, 141, 103, 0.2);
+position: relative;
+padding: 5px;
+box-shadow: inset 2px 2px 2px #cbced1dd,
+inset -2px -2px 2px #ffffffdd;
+}
+.title{
+position: absolute;
+top: 30%;
+left: -70%; 
+letter-spacing: 0.5px;
+transform: rotate(-90deg);
+font-size: 40px;
+color: rgba(108, 141, 103, 0.5);
+filter: blur(1px);
+}
+
+h5{
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 10px;
+}
+button.btn{
+width: 100%;
+padding: 5px;
+border: 0;
+font-size: 16px;
+color: #fff;
+cursor: pointer;
+}
+/* input */
+.input-container{
+width: 100%;
+padding: 40px 0 20px 0;
+border-radius: 20px;
+}
+.rec{
+position: absolute;
+top: 0;
+right: 30%;
+width: 70px;
+border-radius: 0 0 50px 50px;
+padding: 7px;
+background-color: #eee;
+}
+form input{
+width: 70%;
+font-size: 18px;
+margin-bottom: 10px;
+border: 0; outline: 0;
+border-bottom: 2px solid #ddd;
+background: none;
+margin-left: 30px;
+text-align: center;
+font-weight: 600;
+}
+form input:focus{
+margin-left: 10px;
+width: 90%;
+}
+/* todo-list */
+.todo-list-grp{
+width: 100%;
+height: 170px;
+overflow: auto;
+}
+/* item */
+li{
+width: 100%;
+display: flex;
+position: relative;
+font-size: 10px;
+font-weight: 600;
+margin-bottom: 5px;
+padding-bottom: 5px;
+border-bottom: 1px solid #fff;
+height: 30px;
+}
+
+.todoIcons{
+position: absolute;
+right: 6px;
+line-height: 30px;
+cursor: pointer;
+}
+.icon{
+margin-left: 10px;
+transition: ease-in-out 0.8s;
+}
+.icon:hover{
+font-size: 12px;
+}
+li label{
+padding-left: 5px;
+font-size: 15px;
+line-height: 30px;
+padding-bottom: 5px;
+}
+li input[type = 'checkbox']{
+transform: scale(1);
+cursor: pointer;
+box-shadow: none;
+filter: grayscale(1);
+margin: 5px;
+line-height: 30px;
+}
+input[type = checkbox]:checked + label{
+text-decoration: line-through;
+/* color: #0f0; */
+margin-left: 5px;
+font-weight: bolder;
+}
+input[type = checkbox]{
+color: #0f0;
+}
+
+button.btn-clear{
+position: absolute;
+bottom: 0;
+left: 0;
+border-radius: 0 0 20px 20px;
+background-color: #f00;
+color: #eee;
+transition: ease-in-out 0.8s;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9) ;
+}
+
+button.btn-clear:hover{
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+
+}
+button.btn-add{
+border-radius: 20px;
+box-shadow: 2px 8px 8px #000;
+transition: ease-in-out 0.8s;
+background: #ddd;
+color: 
+rgba(108, 141, 103, 2);
+width: 90%;
+margin-left: 11px;
+}
+button.btn-add:hover{
+box-shadow: 2px 3px 8px #000;
+}
+
+.container .time{
+position: absolute;
+top: 3px;
+left: 7px;
+font-size: 14px;
+}
+.container #menu span{
+position: absolute;
+top: 5px;
+right: 10px;
+cursor: pointer;
+}
+.container #menu .menu-container{
+/* position: fixed; */
+/* top: 25%;
+left: 35%; */
+display: block;
+width: 150px;
+margin-top: 85px;
+margin-left: 15px;
+}
+.container .hide{
+display: none;
+}
+.menu-container p{
+font-size: 10px;
+}
+.menu-container .mn{
+width: 100%;
+border: none;
+padding: 10px;
+border-radius: 20px;
+margin-bottom: 10px;
+cursor: pointer;
+background: none;
+border: 2px solid #ddd;
+transition: all ease-in-out 0.5s;
+}
+.menu-container .mn:hover{
+color: 
+rgb(48, 71, 44);
+background: #ddd;
+font-weight: bolder;
+}
+.about-container .about,
+.mentor-container .mentor,
+.contact-container .contact{
+display: block;
+text-align: center;
+padding-bottom: 10px;
+}
+
